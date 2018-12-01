@@ -5,6 +5,12 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, '/src')
   },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js',
+      filters: path.resolve(__dirname, 'src/filters/')
+    }
+  },
   module: {
     rules: [
       {
